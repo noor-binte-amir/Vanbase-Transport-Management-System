@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/colorPrimaryTrans"
+        android:src="@drawable/splash_black" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/preferences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccentTrans4"
+            android:onClick="preference"
+            android:padding="1dp"
+            android:text="Preferences"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/reservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccentTrans2"
+            android:onClick="reservation"
+            android:padding="1dp"
+            android:text="Make a Reservation"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trackButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccentTrans3"
+            android:textSize="18sp"
+            android:onClick="track"
+            android:text="Track my Van"/>
+
+        <Button
+            android:id="@+id/cancelVan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccentTrans"
+            android:textSize="18sp"
+            android:onClick="cancel"
+            android:text="Cancel Reservation" />
+    </LinearLayout>
+</RelativeLayout>

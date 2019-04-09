@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreferencesActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/chooseRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="chooseRoute"
+        android:text="Choose My Route"
+        android:background="@color/colorAccentTrans"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/requestRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorAccentTrans2"
+        android:textColor="#ffffff"
+        android:onClick="requestRoute"
+        android:text="Request New Route"
+        android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/setAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccentTrans3"
+            android:onClick="setAddress"
+            android:text="Set Address"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/timings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccentTrans4"
+            android:onClick="defaultTimings"
+            android:text="Select Default Timings"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:onClick="save"
+            android:background="@color/colorPrimary"
+        android:text="Save Changes"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

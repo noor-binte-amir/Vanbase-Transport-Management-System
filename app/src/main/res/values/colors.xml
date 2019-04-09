@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="material_blue_500">#5677fc</color>
+
+    <color name="colorBlackTrans">#a0000000</color>
+    <color name="colorPrimaryTrans">#54968e</color>
+    bar
+    <color name="colorAccentTrans">#cc678082</color>
+    <color name="colorPrimaryRegister">#FFFFFF</color>
+    <color name="colorAccentTrans2">#cc3c585f</color>
+    <color name="colorAccentTrans3">#cc09161d</color>
+    <color name="colorAccentTrans4">#cc000000</color>
+
+</resources>

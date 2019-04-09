@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefaultTimingsActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_marginBottom="20dp"
+        android:text="Choose Your Default Parking Area"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:textSize="26sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="33dp"
+        android:checkedButton="@+id/time2">
+
+        <RadioButton
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:text="3 PM NBS Parking"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:text="5 PM SADA Parking"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="5 PM C2 Parking"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="6 PM NBS Parking"
+            android:textSize="16sp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccentTrans3"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="110dp" />
+
+
+
+</RelativeLayout>

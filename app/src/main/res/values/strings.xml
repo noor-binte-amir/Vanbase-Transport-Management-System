@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VanBase</string>
+    <string name="title_activity_choose_route">Choose Your Route</string>
+    <string name="action_settings">Sign Out</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tracker">Van Tracker</string>
+    <string name="title_activity_request_route">Request Route</string>
+</resources>
